@@ -1,0 +1,38 @@
+{
+  "name": "to-ms",
+  "version": "0.1.0",
+  "description": "Tiny chained ms creation util",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:shuvalov-anton/to-ms.git"
+  },
+  "keywords": [
+    "ms",
+    "milliseconds",
+    "chaining",
+    "setTimeout",
+    "setInterval",
+    "time",
+    "days",
+    "hours",
+    "minutes",
+    "seconds"
+  ],
+  "author": "Shuvalov Anton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shuvalov-anton/to-ms/issues"
+  },
+  "homepage": "https://github.com/shuvalov-anton/to-ms",
+  "dev-dependencies": {
+    "mocha": "^1.21.4",
+    "should": "^4.0.4"
+  }
+}

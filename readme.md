@@ -54,3 +54,7 @@ Just use `window.toMs`
 - `toMs.hours(Number)`
 - `toMs.day()`
 - `toMs.days(Number)`
+- `toMs.week()`
+- `toMs.weeks(Number)`
+- `toMs.year()`
+- `toMs.years(Number)`

@@ -94,6 +94,46 @@ describe('to-ms', function () {
       ms.should.be.equal(7 * 24 * 60 * 60 * 1000);
     });
   });
+  describe('week()', function () {
+    var ms;
+    it('should returns a number', function () {
+      ms = toMs.week();
+      ms.should.be.a.Number;
+    });
+    it('should returns correct ms value', function () {
+      ms.should.be.equal(7 * 24 * 60 * 60 * 1000);
+    });
+  });
+  describe('weeks()', function () {
+    var ms;
+    it('should returns a number', function () {
+      ms = toMs.weeks('7');
+      ms.should.be.a.Number;
+    });
+    it('should returns correct ms value', function () {
+      ms.should.be.equal(7 * 7 * 24 * 60 * 60 * 1000);
+    });
+  });
+  describe('year()', function () {
+    var ms;
+    it('should returns a number', function () {
+      ms = toMs.year();
+      ms.should.be.a.Number;
+    });
+    it('should returns correct ms value', function () {
+      ms.should.be.equal(365 * 24 * 60 * 60 * 1000);
+    });
+  });
+  describe('years()', function () {
+    var ms;
+    it('should returns a number', function () {
+      ms = toMs.years(3);
+      ms.should.be.a.Number;
+    });
+    it('should returns correct ms value', function () {
+      ms.should.be.equal(3 * 365 * 24 * 60 * 60 * 1000);
+    });
+  });
   describe('chaining', function() {
     var ms;
     it('methods should chains', function() {

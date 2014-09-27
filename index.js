@@ -19,6 +19,10 @@
     number.hours       = _bind(_addMs, number, 36e5);
     number.day         = _bind(_addMs, number, 864e5, 1);
     number.days        = _bind(_addMs, number, 864e5);
+    number.week        = _bind(_addMs, number, 6048e5, 1);
+    number.weeks       = _bind(_addMs, number, 6048e5);
+    number.year        = _bind(_addMs, number, 31536e6, 1);
+    number.years       = _bind(_addMs, number, 31536e6);
     return number;
   }
 

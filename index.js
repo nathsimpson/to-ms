@@ -6,15 +6,14 @@ module.exports = (function() {
 })();
 
 function _extended(number) {
-  number._addMs        = _addMs;
-  number.second      = number._addMs.bind(number, 1e3, 1);
-  number.seconds     = number._addMs.bind(number, 1e3);
-  number.minute      = number._addMs.bind(number, 6e4, 1);
-  number.minutes     = number._addMs.bind(number, 6e4);
-  number.hour        = number._addMs.bind(number, 36e5, 1);
-  number.hours       = number._addMs.bind(number, 36e5);
-  number.day         = number._addMs.bind(number, 864e5, 1);
-  number.days        = number._addMs.bind(number, 864e5);
+  number.second      = _addMs.bind(number, 1e3, 1);
+  number.seconds     = _addMs.bind(number, 1e3);
+  number.minute      = _addMs.bind(number, 6e4, 1);
+  number.minutes     = _addMs.bind(number, 6e4);
+  number.hour        = _addMs.bind(number, 36e5, 1);
+  number.hours       = _addMs.bind(number, 36e5);
+  number.day         = _addMs.bind(number, 864e5, 1);
+  number.days        = _addMs.bind(number, 864e5);
   return number;
 }
 

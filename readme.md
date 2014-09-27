@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/shuvalov-anton/to-ms.svg)](https://travis-ci.org/shuvalov-anton/to-ms)
 [![Code Climate](https://codeclimate.com/github/shuvalov-anton/to-ms/badges/gpa.svg)](https://codeclimate.com/github/shuvalov-anton/to-ms)
 
-Simple and human friendly ms implementation with awesome chaining. Thanks to [@subzey][1] for sketch :D
+Simple and human friendly millisecond implementation with awesome chaining. Thanks [@subzey][1] for a sketch and advise :D
 
 [1]: https://github.com/subzey
 

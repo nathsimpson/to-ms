@@ -12,7 +12,7 @@ var toMs = require('../');
 
 describe('to-ms', function () {
   it('should be a function', function() {
-    toMs.should.be.a.Function;
+    toMs.should.be.a.Number;
   });
   describe('seconds()', function () {
     var ms;

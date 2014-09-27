@@ -23,8 +23,8 @@
   }
 
   function _addMs(multiplier, value) {
-    var _value = multiplier * (value);
-    var number = new Number(this + _value);
+    var _value = multiplier * (+value);
+    var number = new Number(this + _value || 0);
     return _extended(number);
   }
 

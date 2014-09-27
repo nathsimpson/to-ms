@@ -3,9 +3,7 @@
 'use strict';
 
 (function (factory) {
-  if (typeof define === 'function' && define.amd) {
-    define(factory()); // AMD support
-  } else if (typeof exports !== 'undefined') {
+  if (typeof exports !== 'undefined') {
     module.exports = factory(); // CommonJS support
   } else {
     window.toMs = factory(); // Non-modular execution

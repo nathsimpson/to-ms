@@ -40,6 +40,10 @@ var ms = toMs
   .seconds(45);
 ```
 
+## Browser Support
+
+Just use `window.toMs`
+
 ## Methods
 
 - `toMs.second()`

@@ -32,7 +32,10 @@
   },
   "homepage": "https://github.com/shuvalov-anton/to-ms",
   "devDependencies": {
+    "coveralls": "^2.11.2",
+    "jscoverage": "^0.5.6",
     "mocha": "^1.21.4",
+    "mocha-lcov-reporter": "0.0.1",
     "should": "^4.0.4"
   }
 }

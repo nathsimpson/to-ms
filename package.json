@@ -1,13 +1,16 @@
 {
   "name": "to-ms",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Tiny chained ms creation util",
   "main": "index.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-cov": "jscoverage lib lib-cov; MS_COV=1 ./node_modules/.bin/mocha -R html-cov > coverage.html",
+    "browser": "serve test",
+    "make": "umd toMs -c < ./lib/ms.js > dest/to-ms.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +39,8 @@
     "jscoverage": "^0.5.6",
     "mocha": "^1.21.4",
     "mocha-lcov-reporter": "0.0.1",
-    "should": "^4.0.4"
+    "serve": "^1.4.0",
+    "should": "^4.0.4",
+    "umd": "^2.1.0"
   }
 }

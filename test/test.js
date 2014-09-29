@@ -1,17 +1,17 @@
-
-/* globals should, it, describe */
+/* globals toMs, should, it, describe, window */
 
 'use strict';
 
 /**
  * Dependencies
  */
-var toMs = require('../');
+var isNode = typeof window === 'undefined';
+if (isNode) { global.toMs = require('../'); }
 
 // End dependencies
 
 describe('to-ms', function () {
-  it('should be a function', function() {
+  it('should be a Number', function() {
     toMs.should.be.a.Number;
   });
   describe('seconds()', function () {

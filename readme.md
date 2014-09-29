@@ -43,7 +43,9 @@ var ms = toMs
 
 ## Browser Support
 
-Just use `window.toMs`
+Just use `window.toMs`. To support legacy browsers you must use [ES5-Shim][2].
+
+[2]: https://github.com/es-shims/es5-shim
 
 ## Methods
 

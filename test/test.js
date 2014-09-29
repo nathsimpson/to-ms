@@ -1,12 +1,12 @@
-
-/* globals should, it, describe */
+/* globals toMs, should, it, describe, window */
 
 'use strict';
 
 /**
  * Dependencies
  */
-var toMs = require('../');
+var isNode = typeof window === 'undefined';
+if (isNode) { global.toMs = require('../'); }
 
 // End dependencies
 

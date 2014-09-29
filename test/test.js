@@ -11,7 +11,7 @@ if (isNode) { global.toMs = require('../'); }
 // End dependencies
 
 describe('to-ms', function () {
-  it('should be a function', function() {
+  it('should be a Number', function() {
     toMs.should.be.a.Number;
   });
   describe('seconds()', function () {

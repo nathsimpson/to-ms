@@ -7,7 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-cov": "jscoverage lib lib-cov; MS_COV=1 ./node_modules/.bin/mocha -R html-cov > coverage.html",
+    "browser": "serve test"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,7 @@
     "jscoverage": "^0.5.6",
     "mocha": "^1.21.4",
     "mocha-lcov-reporter": "0.0.1",
+    "serve": "^1.4.0",
     "should": "^4.0.4"
   }
 }

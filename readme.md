@@ -4,6 +4,8 @@
 [![Code Climate](https://codeclimate.com/github/shuvalov-anton/to-ms/badges/gpa.svg)](https://codeclimate.com/github/shuvalov-anton/to-ms)
 [![Coverage Status](https://coveralls.io/repos/shuvalov-anton/to-ms/badge.png?branch=master)](https://coveralls.io/r/shuvalov-anton/to-ms?branch=master)
 
+[![NPM](https://nodei.co/npm/to-ms.png?downloads=true)](https://nodei.co/npm/to-ms/)
+
 Simple and human friendly millisecond implementation with awesome chaining. Thanks [@subzey][1] for a sketch and advise :D
 
 [1]: https://github.com/subzey

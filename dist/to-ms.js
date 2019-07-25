@@ -1,26 +1,12 @@
-!(function(e) {
-  if ("object" == typeof exports && "undefined" != typeof module)
-    module.exports = e();
-  else if ("function" == typeof define && define.amd) define([], e);
-  else {
-    var f;
-    "undefined" != typeof window
-      ? (f = window)
-      : "undefined" != typeof global
-      ? (f = global)
-      : "undefined" != typeof self && (f = self),
-      (f.toMs = e());
-  }
-})(function() {
-  var define, module, exports;
-  module = { exports: (exports = {}) };
+(function (f) { if (typeof exports === "object" && typeof module !== "undefined") { module.exports = f() } else if (typeof define === "function" && define.amd) { define([], f) } else { var g; if (typeof window !== "undefined") { g = window } else if (typeof global !== "undefined") { g = global } else if (typeof self !== "undefined") { g = self } else { g = this } g.toMs = f() } })(function () {
+  var define, module, exports; module = { exports: (exports = {}) };
   /* jshint -W053 */
 
-  ("use strict");
+  "use strict";
 
-  module.exports = extended(new Number(0));
+  module.exports = toMs(new Number(0));
 
-  function extended(number) {
+  function toMs(number) {
     number.second = addMs.bind(number, 1e3, 1);
     number.seconds = addMs.bind(number, 1e3);
     number.minute = addMs.bind(number, 6e4, 1);
@@ -36,9 +22,17 @@
     return number;
   }
 
-  function addMs(mlp, val) {
-    val = mlp * (+val || 0);
-    return extended(new Number(this + val));
+  function addMs(unit, val = 0) {
+    // the previous value
+    const a = this
+
+    // unit times the multiplier
+    const b = unit * (+val);
+
+    // add them together
+    const res = new Number(a + b)
+
+    return toMs(res);
   }
 
   return module.exports;

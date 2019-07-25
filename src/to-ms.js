@@ -2,9 +2,9 @@
 
 "use strict";
 
-module.exports = extended(new Number(0));
+module.exports = toMs(new Number(0));
 
-function extended(number) {
+function toMs(number) {
   number.second = addMs.bind(number, 1e3, 1);
   number.seconds = addMs.bind(number, 1e3);
   number.minute = addMs.bind(number, 6e4, 1);
@@ -20,7 +20,15 @@ function extended(number) {
   return number;
 }
 
-function addMs(mlp, val) {
-  val = mlp * (+val || 0);
-  return extended(new Number(this + val));
+function addMs(unit, val = 0) {
+  // the previous value
+  const a = this
+
+  // unit times the multiplier
+  const b = unit * (+val);
+
+  // add them together
+  const res = new Number(a + b)
+
+  return toMs(res);
 }

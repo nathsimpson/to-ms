@@ -30,9 +30,7 @@
     const b = unit * (+val);
 
     // add them together
-    const res = new Number(a + b)
-
-    return toMs(res);
+    return toMs(new Number(a + b));
   }
 
   return module.exports;

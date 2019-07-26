@@ -1,1 +1,1 @@
-module.exports = require("./lib/to-ms");
+module.exports = require("./dist/to-ms");

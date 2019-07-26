@@ -1,19 +1,13 @@
-# toMs
+# toMs ⏲
 
-[![Build Status](https://travis-ci.org/shuvalov-anton/to-ms.svg)](https://travis-ci.org/shuvalov-anton/to-ms)
-[![Code Climate](https://codeclimate.com/github/shuvalov-anton/to-ms/badges/gpa.svg)](https://codeclimate.com/github/shuvalov-anton/to-ms)
-[![Coverage Status](https://coveralls.io/repos/shuvalov-anton/to-ms/badge.png?branch=master)](https://coveralls.io/r/shuvalov-anton/to-ms?branch=master)
-
-[![NPM](https://nodei.co/npm/to-ms.png?downloads=true)](https://nodei.co/npm/to-ms/)
-
-Simple and human friendly millisecond implementation with awesome chaining. Thanks [@subzey][1] for a sketch and advise :D
-
-[1]: https://github.com/subzey
+A simple and human-friendly millisecond conversion util with awesome chaining.
 
 ## Install
 
 ```
 npm install to-ms
+// or
+yarn add to-ms
 ```
 
 ## Examples
@@ -25,7 +19,7 @@ setTimeout(
   function () {
     /* do something */
   }, toMs
-    .hour()
+    .hour(1)
     .minutes(15)
     .seconds(30)
 );
@@ -33,7 +27,7 @@ setTimeout(
 
 ## Chaining
 
-All methods are chainable. I mean, you can pretty simple write something like this:
+All methods are chainable, and easy to use.
 
 ```js
 var ms = toMs

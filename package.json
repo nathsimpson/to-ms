@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "nyc mocha",
-    "make": "umd toMs -c < ./lib/to-ms.js > dist/to-ms.js"
+    "build": "umd toMs -c < ./src/to-ms.js > ./dist/to-ms.js"
   },
   "repository": {
     "type": "git",

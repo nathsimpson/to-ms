@@ -57,3 +57,6 @@ Just use `window.toMs`. To support legacy browsers you must use [ES5-Shim][2].
 - `toMs.weeks(Number)`
 - `toMs.year()`
 - `toMs.years(Number)`
+
+## Acknowledgements
+This package was previously owned and maintained by [Shuvalov Anton](https://github.com/A).

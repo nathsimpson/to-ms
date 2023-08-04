@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "nyc mocha --reporter spec --colors --require should --ui bdd",
-    "build": "umd toMs -c < ./src/to-ms.js > ./dist/to-ms.js"
+    "build": "umd toMs -c < ./src/to-ms.js > ./dist/to-ms.js",
+    "format": "prettier . --write"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
   "devDependencies": {
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
+    "prettier": "3.0.1",
     "should": "^13.2.3",
     "umd": "^3.0.3"
   }

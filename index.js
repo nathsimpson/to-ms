@@ -1,1 +1,1 @@
-module.exports = require("./dist/to-ms");
+module.exports = require('./dist/to-ms');

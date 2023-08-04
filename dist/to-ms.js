@@ -1,8 +1,27 @@
-(function (f) { if (typeof exports === "object" && typeof module !== "undefined") { module.exports = f() } else if (typeof define === "function" && define.amd) { define([], f) } else { var g; if (typeof window !== "undefined") { g = window } else if (typeof global !== "undefined") { g = global } else if (typeof self !== "undefined") { g = self } else { g = this } g.toMs = f() } })(function () {
-  var define, module, exports; module = { exports: (exports = {}) };
+(function (f) {
+  if (typeof exports === 'object' && typeof module !== 'undefined') {
+    module.exports = f();
+  } else if (typeof define === 'function' && define.amd) {
+    define([], f);
+  } else {
+    var g;
+    if (typeof window !== 'undefined') {
+      g = window;
+    } else if (typeof global !== 'undefined') {
+      g = global;
+    } else if (typeof self !== 'undefined') {
+      g = self;
+    } else {
+      g = this;
+    }
+    g.toMs = f();
+  }
+})(function () {
+  var define, module, exports;
+  module = { exports: (exports = {}) };
   /* jshint -W053 */
 
-  "use strict";
+  ('use strict');
 
   module.exports = toMs(new Number(0));
 
@@ -24,13 +43,13 @@
 
   function addMs(unit, val = 0) {
     // the previous value
-    const a = this
+    const previousValue = this;
 
     // unit times the multiplier
-    const b = unit * (+val);
+    const unitTimesMultiplier = unit * +val;
 
     // add them together
-    return toMs(new Number(a + b));
+    return toMs(new Number(previousValue + unitTimesMultiplier));
   }
 
   return module.exports;

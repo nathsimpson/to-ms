@@ -1,6 +1,6 @@
 /* jshint -W053 */
 
-"use strict";
+'use strict';
 
 module.exports = toMs(new Number(0));
 
@@ -22,11 +22,11 @@ function toMs(number) {
 
 function addMs(unit, val = 0) {
   // the previous value
-  const a = this
+  const previousValue = this;
 
   // unit times the multiplier
-  const b = unit * (+val);
+  const unitTimesMultiplier = unit * +val;
 
   // add them together
-  return toMs(new Number(a + b));
+  return toMs(new Number(previousValue + unitTimesMultiplier));
 }

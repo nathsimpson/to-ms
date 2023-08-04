@@ -15,14 +15,9 @@ yarn add to-ms
 ```js
 var toMs = require('to-ms');
 
-setTimeout(
-  function () {
-    /* do something */
-  }, toMs
-    .hour(1)
-    .minutes(15)
-    .seconds(30)
-);
+setTimeout(function () {
+  /* do something */
+}, toMs.hour(1).minutes(15).seconds(30));
 ```
 
 ## Chaining
@@ -30,11 +25,7 @@ setTimeout(
 All methods are chainable, and easy to use.
 
 ```js
-var ms = toMs
-  .days(30)
-  .hours(10)
-  .minutes(30)
-  .seconds(45);
+var ms = toMs.days(30).hours(10).minutes(30).seconds(45);
 ```
 
 ## Browser Support
@@ -59,4 +50,5 @@ Just use `window.toMs`. To support legacy browsers you must use [ES5-Shim][2].
 - `toMs.years(Number)`
 
 ## Acknowledgements
+
 This package was previously owned and maintained by [Shuvalov Anton](https://github.com/A).

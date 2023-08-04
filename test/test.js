@@ -1,14 +1,16 @@
-const should = require("should");
+const should = require('should');
 
 /* globals toMs, should, it, describe, window */
 
-'use strict';
+('use strict');
 
 /**
  * Dependencies
  */
 var isNode = typeof window === 'undefined';
-if (isNode) { global.toMs = require('../'); }
+if (isNode) {
+  global.toMs = require('../');
+}
 
 // End dependencies
 
@@ -19,7 +21,7 @@ describe('to-ms', function () {
   describe('seconds()', function () {
     var ms;
     it('should returns a number', function () {
-      ms = toMs.seconds('60');
+      ms = toMs.seconds(60);
       ms.should.be.a.Number;
     });
     it('should returns correct ms value', function () {
@@ -49,7 +51,7 @@ describe('to-ms', function () {
   describe('minutes()', function () {
     var ms;
     it('should returns a number', function () {
-      ms = toMs.minutes('60');
+      ms = toMs.minutes(60);
       ms.should.be.a.Number;
     });
     it('should returns correct ms value', function () {
@@ -69,7 +71,7 @@ describe('to-ms', function () {
   describe('hours()', function () {
     var ms;
     it('should returns a number', function () {
-      ms = toMs.hours('24');
+      ms = toMs.hours(24);
       ms.should.be.a.Number;
     });
     it('should returns correct ms value', function () {
@@ -89,7 +91,7 @@ describe('to-ms', function () {
   describe('days()', function () {
     var ms;
     it('should returns a number', function () {
-      ms = toMs.days('7');
+      ms = toMs.days(7);
       ms.should.be.a.Number;
     });
     it('should returns correct ms value', function () {
@@ -109,7 +111,7 @@ describe('to-ms', function () {
   describe('weeks()', function () {
     var ms;
     it('should returns a number', function () {
-      ms = toMs.weeks('7');
+      ms = toMs.weeks(7);
       ms.should.be.a.Number;
     });
     it('should returns correct ms value', function () {
@@ -139,19 +141,11 @@ describe('to-ms', function () {
   describe('chaining', function () {
     var ms;
     it('methods should chains', function () {
-      ms = toMs
-        .days(2)
-        .hours(12)
-        .minutes(20)
-        .seconds(15);
+      ms = toMs.days(2).hours(12).minutes(20).seconds(15);
       ms.should.be.a.Number;
     });
     it('singles shoulds chains too', function () {
-      ms = toMs
-        .day()
-        .hour()
-        .minute()
-        .second();
+      ms = toMs.day().hour().minute().second();
       ms.should.be.a.Number;
     });
   });

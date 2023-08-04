@@ -1,6 +1,6 @@
 {
   "name": "to-ms",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Tiny chained ms creation util",
   "main": "index.js",
   "directories": {

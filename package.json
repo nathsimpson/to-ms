@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "nyc mocha",
+    "test": "nyc mocha --reporter spec --colors --require should --ui bdd",
     "build": "umd toMs -c < ./src/to-ms.js > ./dist/to-ms.js"
   },
   "repository": {
@@ -33,8 +33,8 @@
   },
   "homepage": "https://github.com/nathsimpson/to-ms",
   "devDependencies": {
-    "mocha": "^6.1.4",
-    "nyc": "^14.1.1",
+    "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
     "should": "^13.2.3",
     "umd": "^3.0.3"
   }
